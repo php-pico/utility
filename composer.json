@@ -1,0 +1,39 @@
+{
+    "name"        : "php-pico/utility",
+    "description" : "A utility package with reusable helpers for the php-pico framework.",
+    "type"        : "library",
+    "license"     : "MIT",
+    "minimum-stability": "stable",
+    "scripts"     : {
+        "format": "mago format",
+        "mago": "mago analyze",
+        "test": "phpunit -c phpunit.xml.dist",
+        "qa": [
+            "@format",
+            "@mago",
+            "@test"
+        ]
+    },
+    "require"     : {
+        "php": "^8.5"
+    },
+    "autoload"    : {
+        "psr-4": {
+            "PhpPico\\Template\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpPico\\Template\\Tests\\": "tests/"
+        }
+    },
+    "require-dev" : {
+        "carthage-software/mago": "^1.30.0",
+        "phpunit/phpunit": "^12.5.30"
+    },
+    "config"      : {
+        "allow-plugins": {
+            "carthage-software/mago": true
+        }
+    }
+}
