@@ -19,12 +19,12 @@
     },
     "autoload"    : {
         "psr-4": {
-            "PhpPico\\Template\\": "src/"
+            "PhpPico\\Utility\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpPico\\Template\\Tests\\": "tests/"
+            "PhpPico\\Utility\\Tests\\": "tests/"
         }
     },
     "require-dev" : {
